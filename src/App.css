@@ -1,5 +1,6 @@
 body {
   font-family: "Open Sans Condensed";
+  letter-spacing: 0.1rem;
   box-sizing: border-box;
   padding: 20px 60px;
 }
