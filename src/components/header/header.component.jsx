@@ -1,8 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./header.styles.scss";
+import CustomButton from "../custom-button/custom-button.component";
+import { auth } from "../../firebase/firebase.utils";
 
-const Header = () => {
+const Header = ({ currentUser }) => {
   return (
     <div className="header">
       <Link className="logo-container" to="/">
@@ -20,9 +22,15 @@ const Header = () => {
         <Link className="option" to="/shop">
           CONTACT
         </Link>
-        <Link className="option" to="/signin">
-          SIGN IN
-        </Link>
+        {currentUser ? (
+          <div className="sign-out" onClick={() => auth.signOut()}>
+            LOG OUT
+          </div>
+        ) : (
+          <Link className="option" to="/signin">
+            <CustomButton classes="sign-btn">SIGN IN</CustomButton>
+          </Link>
+        )}
       </div>
     </div>
   );

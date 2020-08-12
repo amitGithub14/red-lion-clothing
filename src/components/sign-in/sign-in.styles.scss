@@ -1,3 +1,8 @@
 .sign-in {
   width: 30vw;
+
+  .sign-btn-all {
+    display: flex;
+    justify-content: space-between;
+  }
 }

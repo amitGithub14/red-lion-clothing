@@ -1,20 +1,51 @@
-.custom-button {
-  min-width: 165px;
-  background-color: black;
+@mixin cust-btn-main {
+  background-color: #1b1464;
   color: white;
-  border: none;
-  line-height: 50px;
-  padding: 0 35px;
+  border-radius: 0;
   text-transform: uppercase;
   font-size: 15px;
   font-family: "Open Sans Condensed";
   letter-spacing: 0.2rem;
   font-weight: bolder;
+  border: 1px solid #1b1464;
+}
+
+@mixin btn-hover-effect {
+  background-color: White;
+  color: #1b1464;
+  border: 1px solid #1b1464;
+  cursor: pointer;
+}
+
+.custom-button {
+  min-width: 165px;
+  padding: 0 35px;
+  line-height: 50px;
+
+  @include cust-btn-main();
 
   &:hover {
-    background-color: White;
-    color: black;
-    border: 1px solid black;
-    cursor: pointer;
+    @include btn-hover-effect();
+  }
+
+  &.isGoogleSignin {
+    background-color: #e54134;
+    border: 1px solid #e54134;
+    &:hover {
+      background-color: white;
+      color: #e54134;
+      border: 1px solid #e54134;
+    }
+  }
+}
+.sign-btn {
+  max-width: 135px;
+  line-height: 40px;
+  padding: 0 15px;
+  @include cust-btn-main();
+  font-weight: bolder;
+
+  &:hover {
+    @include btn-hover-effect();
   }
 }
