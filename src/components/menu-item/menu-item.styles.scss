@@ -5,7 +5,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  // margin: 0 7.5px 15px;
   background-color: cadetblue;
   overflow: hidden;
 
@@ -43,10 +42,9 @@
 }
 
 .content {
-  max-width: 90px;
+  max-width: 110px;
   height: 90px;
-  padding: 0 25px;
-  margin: 0 10px;
+  padding: 0 15px;
   background-color: white;
   display: flex;
   flex-direction: column;
