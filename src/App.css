@@ -2,8 +2,9 @@ body {
   font-family: "Open Sans Condensed";
   letter-spacing: 0.1rem;
   box-sizing: border-box;
-  padding: 20px 60px;
+  background-color: rgb(246, 246, 246);
 }
+
 .body-wrapper {
   padding: 0;
 }
@@ -13,6 +14,12 @@ a {
   color: black;
 }
 
+.container {
+  padding: 20px 60px;
+}
+
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }

@@ -1,0 +1,72 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+
+  & .footer-top {
+    display: flex;
+    flex: 1 1 auto;
+    margin-top: 30px;
+    padding: 30px 20px;
+    justify-content: space-around;
+    background-color: #120c50;
+    color: white;
+
+    & .intro {
+      display: flex;
+      gap: 20px;
+      flex-direction: column;
+    }
+
+    & .list-map {
+      gap: 10px;
+      display: flex;
+      flex-direction: column;
+      font-size: 18px;
+
+      & .list {
+        color: white;
+      }
+    }
+
+    & .newsletter {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      gap: 10px;
+
+      & .newsletter-form {
+        display: flex;
+        justify-content: flex-end;
+        gap: 10px;
+      }
+
+      & .newsletter-input {
+        padding: 15px;
+        border: none;
+        border-radius: none;
+
+        &:focus {
+          border: none;
+          border-radius: none;
+        }
+      }
+
+      & .newsletter-btn {
+        padding: 15px 25px;
+        border: none;
+        font-size: 1rem;
+        font-weight: bold;
+        background-color: #ccc;
+        cursor: pointer;
+      }
+    }
+  }
+  & .footer-bottom {
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #222222;
+    color: white;
+  }
+}

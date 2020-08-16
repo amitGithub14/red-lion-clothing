@@ -1,10 +1,18 @@
 .header {
+  position: sticky;
+  top: 0;
+  background-color: #ffffff;
+  width: 100%;
   height: 100px;
   margin-bottom: 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 20px;
+  padding: 10px 60px;
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 0 16px rgba(0, 0, 0, 0.15);
+  // background-color: rgba(255, 255, 255, 0.9);
+  z-index: 9999;
 
   .logo-container {
     width: 160px;
@@ -13,17 +21,24 @@
   .options {
     width: 50%;
     height: 100%;
+
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    margin: 0;
+    padding: 0;
+    align-content: stretch;
   }
 
   .option {
     font-size: 18px;
     font-weight: bold;
     letter-spacing: 0.1rem;
-    padding: 5px 15px;
-    margin-right: 15px;
+    padding: 5px 25px;
+
+    &:last-child {
+      padding-right: 0px;
+    }
   }
 }
 .sign-out {
