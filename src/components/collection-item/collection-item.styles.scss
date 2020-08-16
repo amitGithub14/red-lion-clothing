@@ -1,9 +1,28 @@
 .collection-item {
+  position: relative;
   min-width: 22%;
   height: 350px;
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  & .custom-button {
+    position: absolute;
+    width: 80%;
+    top: 225px;
+    display: none;
+  }
+
+  &:hover {
+    .image {
+      opacity: 0.8;
+    }
+    .custom-button {
+      display: flex;
+      opacity: 0.85;
+    }
+  }
+
   & .image {
     width: 100%;
     height: 95%;
