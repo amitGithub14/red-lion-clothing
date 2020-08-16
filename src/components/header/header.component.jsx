@@ -4,14 +4,16 @@ import "./header.styles.scss";
 import CustomButton from "../custom-button/custom-button.component";
 import { auth } from "../../firebase/firebase.utils";
 import { connect } from "react-redux";
+import CartIcon from "../../components/cart-icon/cart-icon.component";
+import CartDropdown from "../../components/cart-dropdown/cart-dropdown.component";
 
-const Header = ({ currentUser }) => {
+const Header = ({ currentUser, hidden }) => {
   return (
     <div className="header">
       <Link className="logo-container" to="/">
         <img
           className="logo"
-          src={require("../../RedLion.png")}
+          src={require("../../assets/RedLion.png")}
           height="80px"
           alt="logo"
         />
@@ -23,6 +25,8 @@ const Header = ({ currentUser }) => {
         <Link className="option" to="/shop">
           CONTACT
         </Link>
+        <CartIcon className="option" />
+        {hidden ? null : <CartDropdown />}
         {currentUser ? (
           <>
             <div className="option">{currentUser.displayName}</div>
@@ -40,7 +44,8 @@ const Header = ({ currentUser }) => {
   );
 };
 
-const mapStateToProps = (state) => ({
-  currentUser: state.user.currentUser,
+const mapStateToProps = ({ user: { currentUser }, cart: { hidden } }) => ({
+  currentUser,
+  hidden,
 });
 export default connect(mapStateToProps)(Header);

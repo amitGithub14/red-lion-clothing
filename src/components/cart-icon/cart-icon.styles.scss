@@ -1,0 +1,21 @@
+.cart-icon {
+  width: 66px;
+  height: 38px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+
+  .shopping-icon {
+    width: 28px;
+    height: 26px;
+  }
+
+  .item-count {
+    position: absolute;
+    font-size: 12px;
+    font-weight: bold;
+    bottom: 7px;
+  }
+}

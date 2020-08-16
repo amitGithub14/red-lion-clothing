@@ -12,7 +12,7 @@
   background-color: rgba(255, 255, 255, 0.9);
   box-shadow: 0 0 16px rgba(0, 0, 0, 0.15);
   // background-color: rgba(255, 255, 255, 0.9);
-  z-index: 9999;
+  z-index: 1;
 
   .logo-container {
     width: 160px;
@@ -21,7 +21,7 @@
   .options {
     width: 50%;
     height: 100%;
-
+    position: relative;
     display: flex;
     justify-content: flex-end;
     align-items: center;
