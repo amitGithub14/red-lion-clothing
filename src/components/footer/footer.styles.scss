@@ -13,6 +13,8 @@
 
     & .intro {
       display: flex;
+      line-height: 1.8rem;
+      max-width: 40vw;
       gap: 20px;
       flex-direction: column;
     }

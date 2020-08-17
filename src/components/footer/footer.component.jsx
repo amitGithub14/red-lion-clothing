@@ -9,8 +9,9 @@ const Footer = () => {
         <div className="intro">
           <h1>RED LION</h1>
           <p>
-            We provide high quality customer support 24/7. Free shipment on all
-            orders.
+            Red Lion is an e-commerce website for demonstration purpose only.
+            It's purpose is to show case the skills in Reactjs (Full Stack
+            Development)
           </p>
         </div>
         <div className="list-map">
