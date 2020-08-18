@@ -18,9 +18,31 @@
     overflow-y: auto; /* Hide vertical scrollbar */
     overflow-x: auto; /* Hide horizontal scrollbar */
     //overflow: scroll;
+
+    /* width */
+    &::-webkit-scrollbar {
+      width: 10px;
+    }
+
+    /* Track */
+    &::-webkit-scrollbar-track {
+      box-shadow: inset 0 0 5px rgb(172, 155, 145);
+      border-radius: 10px;
+    }
+
+    /* Handle */
+    &::-webkit-scrollbar-thumb {
+      border-radius: 20px;
+      background: rgb(172, 155, 145);
+    }
+
+    /* Handle on hover */
+    &::-webkit-scrollbar-thumb:hover {
+      background: rgb(197, 180, 170);
+    }
   }
 
   button {
-    margin-top: auto;
+    margin-top: 10px;
   }
 }
