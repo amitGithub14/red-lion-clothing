@@ -16,6 +16,7 @@ a {
 
 .container {
   padding: 20px 60px;
+  min-height: 300px;
 }
 
 * {
